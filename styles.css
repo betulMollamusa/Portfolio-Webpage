@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome Section Styles */
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: grey;;
+    color: white;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#welcome-section p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+/* Projects Section Styles */
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#projects h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.project-tile {
+    margin: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+.project-tile img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-tile h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #welcome-section h1 {
+        font-size: 2.5em;
+    }
+
+    .project-tile {
+        width: 100%;
+        max-width: 90%;
+    }
+}
